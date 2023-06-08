@@ -1,0 +1,89 @@
+<html>
+<head>
+<title> SHIERA SHAMIMI </title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: pink;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!---Navigation--->
+<h2> 
+<font size="34px" style="color:#FF0080;" face=Broadway>
+Welcome To syiera Website ♡♞
+</h2>
+
+<div class="pill-nav">
+  <a class="active" href="#home">Home</a>
+<a href="file_1.html">About Me</a>
+  <a href="file_2.html">Family</a>
+  <a href="file_3.html">Friends</a>
+  <a href="file_4.html">Gallery</a>
+<a href="file_5.html">Sky</a>
+</div>
+
+
+<font size="28px" style="color: #C32148;" face="Courier New (monospace)">
+<body onload="startTime()">
+
+
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+
+<body { background-image: url(https://wallpaper.dog/large/11049935.jpg');
+}
+
+<h1>
+</h1>
+</font>
+<img src="ASSETST/IMAGE/IMAGE_3.jpg "width="100%">
+
+
+
+
+</body>
+</html>
